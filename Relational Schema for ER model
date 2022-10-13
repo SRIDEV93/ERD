@@ -72,8 +72,8 @@ There are No super and sub classes in this ER diagram.
  
 #Relations
  
-•	Minimum noOfPlayers required to form a team is 7.
-•	Maximum noOfPlayers required to form a team is Many.
+*	Minimum noOfPlayers required to form a team is 7.
+*	Maximum noOfPlayers required to form a team is Many.
 •	Minimum noOfTeams that each player may belong to is one.
 •	Maximum noOfTeams that each player may belong to is one,
 •	Minimum noOfHostTeams That in a match may have is one.
