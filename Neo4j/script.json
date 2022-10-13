@@ -1,0 +1,59 @@
+{
+  "query": {
+    "text": "CREATE  (Leicester:Team {TeamName:\"Leicester City.F.C\"})\r\nCREATE (Treyor : Player {name:\"Treyor Cherry\",born:\"1990\"})\r\nCREATE (Phil :Player {name:\"Phil Jones\",born:\"1998\"})\r\nCREATE (Billy: Player{name:\"Billy Wedlock\", born :\"1997\"})\r\nCREATE (Ernie: Player{name:\"Ernie Blenkinsop\", born:\"1996\"})\r\nCREATE (Sammy: Player{name:\"Sammy Crooks\",born:\"1990\"})\r\nCREATE (Neil: Player{name:\"Neil Webb\",born:\"1996\"})\r\nCREATE (Robbie: Player{name:\"Robbie Fowler\", born:\"1996\"})\r\nCREATE (Jolean:Player{name:\"Jolean Lescott\",born:\"1997\"})\r\nCREATE (Jesse:Player{name:\"Jesse Lingard\",born:\"1992\"})\r\nCREATE (Wilf:Player{name:\"Wilf Mannion\",born:\"1989\"})\r\nCREATE (Brian:Player{name:\"Brian Labone\",born:\"1994\"})\r\nCREATE\r\n    (Treyor)-[:belongs]->(Leicester),\r\n    (Phil)-[:belongs]->(Leicester),\r\n    (Billy)-[:belongs]->(Leicester),\r\n    (Ernie)-[:belongs]->(Leicester),\r\n    (Sammy)-[:belongs]->(Leicester),\r\n    (Neil)-[:belongs]->(Leicester),\r\n    (Robbie)-[:belongs]->(Leicester),\r\n    (Jolean)-[:belongs]->(Leicester),\r\n    (Wilf)-[:belongs]->(Leicester),\r\n    (Jesse)-[:belongs]->(Leicester),\r\n    (Brian)-[:belongs]->(Leicester)\r\nCREATE (Arsenal:Team {TeamName:\"Arsenal.F.C\"})\r\nCREATE (Darren: Player {name:\"Darren Anderton\",born:\"1994\"})\r\nCREATE (Leighton:Player {name:\"Leighton Baines\",born:\"1990\"})\r\nCREATE (Danny: Player{name:\"Danny Rose\", born :\"1999\"})\r\nCREATE (Vivian: Player{name:\"Vivian Woodward\", born:\"1992\"})\r\nCREATE (Tommy: Player{name:\"Tommy Lawton\",born:\"1994\"})\r\nCREATE (Keith: Player{name:\"Keith Newton\",born:\"1997\"})\r\nCREATE (Francis: Player{name:\"Francis Lee\", born:\"1996\"})\r\nCREATE (Colin:Player{name:\"Colin Todd\",born:\"1998\"})\r\nCREATE (Jordan:Player{name:\"Jordan Pickford\",born:\"1991\"})\r\nCREATE (Roy:Player{name:\"Roy McFarland\",born:\"1995\"})\r\nCREATE (Neel:Player{name:\"Neel Franklin\",born:\"1996\"})\r\nCREATE\r\n    (Darren)-[:belongs]->(Arsenal),\r\n    (Leighton)-[:belongs]->(Arsenal),\r\n    (Danny)-[:belongs]->(Arsenal),\r\n    (Vivian)-[:belongs]->(Arsenal),\r\n    (Tommy)-[:belongs]->(Arsenal),\r\n    (Keith)-[:belongs]->(Arsenal),\r\n    (Francis)-[:belongs]->(Arsenal),\r\n    (Colin)-[:belongs]->(Arsenal),\r\n    (Jordan)-[:belongs]->(Arsenal),\r\n    (Roy)-[:belongs]->(Arsenal),\r\n    (Neel)-[:belongs]->(Arsenal)\r\nCREATE (king: Home_ground {name: \"King Power\"})\r\nCREATE (Andre:Referee {RefereeName:\"Andre Mariner\"})\r\nCREATE\r\n    (Andre)-[:role_IN]->(king),\r\n    (Leicester)-[:Host{TeamName:\"Leicester\"}]->(king),\r\n    (Arsenal)-[:Guest{TeamName:\"Arsenal\"}]->(king),\r\n    (Treyor)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Phil)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Billy)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Ernie)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Sammy)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Neil)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Robbie)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Jolean)-[:Host{TeamName:[\"Leicester\"]}]->(king),\r\n    (Wilf)-[:Substitution{TeamName:[\"Leicester\"]}]->(king),\r\n    (Brian)-[:Substitution{TeamName:[\"Leicester\"]}]->(king),\r\n    (Darren)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Leighton)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Danny)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Vivian)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Tommy)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Keith)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Francis)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Colin)-[:Guest{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Roy)-[:Substitution{TeamName:[\"Arsenal\"]}]->(king),\r\n    (Neel)-[:Substitution{TeamName:[\"Arsenal\"]}]->(king)",
+    "parameters": {}
+  },
+  "queryType": "w",
+  "counters": {
+    "_stats": {
+      "nodesCreated": 26,
+      "nodesDeleted": 0,
+      "relationshipsCreated": 45,
+      "relationshipsDeleted": 0,
+      "propertiesSet": 70,
+      "labelsAdded": 26,
+      "labelsRemoved": 0,
+      "indexesAdded": 0,
+      "indexesRemoved": 0,
+      "constraintsAdded": 0,
+      "constraintsRemoved": 0
+    },
+    "_systemUpdates": 0
+  },
+  "updateStatistics": {
+    "_stats": {
+      "nodesCreated": 26,
+      "nodesDeleted": 0,
+      "relationshipsCreated": 45,
+      "relationshipsDeleted": 0,
+      "propertiesSet": 70,
+      "labelsAdded": 26,
+      "labelsRemoved": 0,
+      "indexesAdded": 0,
+      "indexesRemoved": 0,
+      "constraintsAdded": 0,
+      "constraintsRemoved": 0
+    },
+    "_systemUpdates": 0
+  },
+  "plan": false,
+  "profile": false,
+  "notifications": [],
+  "server": {
+    "address": "78799bc2715af68a2bec5aa72c7693ed.neo4jsandbox.com:7687",
+    "version": "Neo4j/4.4.11",
+    "agent": "Neo4j/4.4.11",
+    "protocolVersion": 4.4
+  },
+  "resultConsumedAfter": {
+    "low": 0,
+    "high": 0
+  },
+  "resultAvailableAfter": {
+    "low": 11,
+    "high": 0
+  },
+  "database": {
+    "name": "neo4j"
+  }
+}
