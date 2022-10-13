@@ -1,4 +1,4 @@
-#Entity-Relationship model for Soccer Game
+# Entity-Relationship model for Soccer Game
 
 The Relationship of the ER-diagram is explained through Cardinality function. My assumptions to this ER Diagram are as follows.
 
