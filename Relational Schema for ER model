@@ -1,8 +1,8 @@
-#Relational schema from entity relationship model
+=Relational schema from entity relationship model
 
 =================================================
 
-####Step 1: Identifying Strong Entities
+#Step 1: Identifying Strong Entities
 
 	There are four major entities (TEAM, REFEREE, GAMEPLAYERS, PLAYERS). The relationship between each entity is created and connected between entity to entity. Each entity contains simple attributes; among those attributes, the entity is uniquely identified, which is called a primary key.
  
