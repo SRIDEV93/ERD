@@ -1,6 +1,8 @@
->Relational schema from entity relationship model
+#Relational schema from entity relationship model
 
-**Step 1: Identifying Strong Entities**
+=================================================
+
+####Step 1: Identifying Strong Entities
 
 	There are four major entities (TEAM, REFEREE, GAMEPLAYERS, PLAYERS). The relationship between each entity is created and connected between entity to entity. Each entity contains simple attributes; among those attributes, the entity is uniquely identified, which is called a primary key.
  
@@ -12,13 +14,13 @@ Gameplayers (playerID, goalsScored, dispossession, possession, assists, shotson,
  
 Players (playerID, name, place, nationality, dob,startYear,shirtno,height,playerPosition,matchesPlayed,playersRecord)
  
-**Step 2: Identifying Weak Entities**
+####Step 2: Identifying Weak Entities
 
 	There is one weak entity (MATCH). The relationship is created for the weak entity, and it contains some simple attributes. The primary key for this weak entity is identified as partially unique.
  
 Match (matchno,teamID,guestTeamID,RefereeID,home_ground,date,scorerName,hostScore,guestScore,finalResult)
  
-**Step 3: One-to-One relationships**
+####Step 3: One-to-One relationships
 
 	The one-to-one relationship is located for Gameplayers entity to substitution relationship. The attributes for the substitution relationship are created. The primary key for this relationship is uniquely identifiable.
  
@@ -27,7 +29,7 @@ One-to-One Relationship: substitution
 Gameplayers (playerID,goalsScored,dispossession,possession,assists,shotson,shotsoff,accuracy,tackles,clearones,duels,saves,fouls,offsides,yellowcard,redcard,substitution_playerID*,substitution_time)
  
 
-**Step 4: One-to-Many Relationship**
+####Step 4: One-to-Many Relationship
  
 There are six one-to-Many relationships in this ER diagram. Host, guest, role, played, plays, belongs. The primary key of the entities in between the relationship is the foreign key for that entities.
 Team (teamID,nameOfTeam,located,noOfPlayers,noOfTrophies,ranking,mainStadium,league,establishment,successRate,managerName,ownerName,transferBudget,clubWorth,website)
@@ -40,15 +42,15 @@ Players (playerID,name,place,nationality,dob,startYear,shirtno,height,playerPosi
  
 Match (matchno,teamID,guestTeamID,RefereeID,home_ground,date,scorerName,hostScore,guestScore,finalResult,teamID*,RefereeID*)
  
-**Step 5: Many-to-Many Relationship**
+####Step 5: Many-to-Many Relationship
  
 There are no Many to Many Relationship in this ERD Diagram.
  
-**Step 6: Multivalued attributes**
+####Step 6: Multivalued attributes
  
 There are no Multivalued Attributes in this ER Diagram.
  
-**Step 7: N-ary Relationships**
+####Step 7: N-ary Relationships
  
 In this ER-Diagram, there are two N-ary Relationships. Host, substitution.
  
@@ -64,11 +66,11 @@ Players (playerID,name,place,nationality,dob,startYear,shirtno,height,playerPosi
  
 Match (matchno,teamID,guestTeamID,RefereeID,home_ground*,date,scorerName,hostScore,guestScore,finalResult,teamID*,RefereeID*)
  
-**Step 8: Super and Subclass**
+####Step 8: Super and Subclass
  
 There are No super and sub classes in this ER diagram.
  
->Relations
+#Relations
  
 •	Minimum noOfPlayers required to form a team is 7.
 •	Maximum noOfPlayers required to form a team is Many.
@@ -97,10 +99,10 @@ There are No super and sub classes in this ER diagram.
 •	Minimum noOfmatches that a referee can have is 1.
 •	Maximum noOfmatches that a referee can have is many.
 
->Cardinality
+#Cardinality
 
-    **Relations**                         **Cardinality**
-Team belongs to players                   7	<---------> M
+   ####Relations                         ####Cardinality
+Team belongs to players                   7 <---------> M
 players belongs to Team                   1 <---------> 1
 hostTeams in a Match                      1 <---------> 1
 matches that hostTeam can play            1 <---------> M
