@@ -1,6 +1,6 @@
 # ERD
 
-Introduction
+# Introduction
 
 Soccer (generally known as Football across the globe) is considered as the 
 world's most famous sport where goals were scored by two different teams by 
